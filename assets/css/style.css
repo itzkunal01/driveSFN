@@ -278,6 +278,11 @@ html {
   left: 0;
 }
 
+.exhaust-img {
+  bottom: 10px;
+  right: 45px;
+}
+
 /* ================================================= OUR MOTIVATION CSS ENDS =================================== */
 /* ================================================= PRELOADER CSS ============================================= */
 #loading {
@@ -391,6 +396,10 @@ html {
   .motivation-mobile-img {
     max-width: 700px;
   }
+
+  .exhaust-img {
+    max-width: 270px;
+  }
 }
 
 @media (max-width: 1299.98px) {
@@ -400,6 +409,11 @@ html {
 
   .motivation-mobile-img {
     max-width: 660px;
+  }
+
+  .exhaust-img {
+    max-width: 200px;
+    right: 75px;
   }
 }
 
@@ -424,6 +438,10 @@ html {
   .bg-motivation {
     background-size: 100% 100%;
     min-height: 740px;
+  }
+
+  .engine-img {
+    bottom: -70px;
   }
 }
 
@@ -456,6 +474,14 @@ html {
 
   .motivation-content {
     margin-top: 0px;
+  }
+
+  .engine-img {
+    display: none;
+  }
+
+  .exhaust-img {
+    display: none;
   }
 }
 
