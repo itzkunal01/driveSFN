@@ -573,8 +573,12 @@ html {
     max-width: 110px;
   }
 
+  .traced-img {
+    bottom: -7px;
+  }
+
   .traced-img a img {
-    max-width: 24px;
+    max-width: 18px;
   }
 
   .heading {
@@ -602,7 +606,11 @@ html {
   }
 
   .drivesfn-text-img {
-    max-height: 250px;
+    max-height: 200px;
     left: 10px;
+  }
+
+  .logo-img {
+    max-width: 114px;
   }
 }
