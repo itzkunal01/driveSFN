@@ -284,6 +284,36 @@ html {
 }
 
 /* ================================================= OUR MOTIVATION CSS ENDS =================================== */
+/* ================================================= BENEFITS POINTS CSS STARTS ================================ */
+.points-box {
+  padding: 45px 34px;
+  border-radius: 16px;
+  background: linear-gradient(0deg, #000000, #000000),
+    linear-gradient(150.52deg, #CC1D19 -6.7%, #CC4F19 118.54%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--orange);
+  backdrop-filter: blur(58.9096px);
+}
+
+.token-card {
+  background: linear-gradient(150.52deg, #CC1D19 -6.7%, #CC4F19 118.54%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  border-radius: 16px;
+}
+
+.custom-border-top-bottom {
+  border-top: 1px solid var(--white);
+}
+
+.token-card-2 {
+  background: #EB8007;
+}
+
+.token-heading {
+  min-height: 90px;
+}
+
+/* ================================================= BENEFITS POINTS CSS ENDS ================================== */
 /* ================================================= PRELOADER CSS ============================================= */
 #loading {
   position: fixed;
@@ -544,5 +574,9 @@ html {
 
   .engine-img {
     max-width: 120px;
+  }
+
+  .points-box {
+    padding: 34px 24px;
   }
 }
