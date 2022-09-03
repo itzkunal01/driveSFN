@@ -97,6 +97,7 @@ html {
   font-size: var(--font-2xl);
   font-weight: 400;
   color: var(--white);
+  line-height: 65px;
 }
 
 .sub-heading {
@@ -175,6 +176,10 @@ html {
   background: var(--common-linear-gradient) !important;
 }
 
+.z-index-5 {
+  z-index: 5;
+}
+
 /* ================================================= COMMON CLASSES ENDS ============================================= */
 /* ================================================= HERO CSS STARTS ================================================= */
 .hero-section {
@@ -220,6 +225,39 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 800px;
+}
+
+.why-sfn-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(58.9096px);
+  border-radius: 16px;
+  cursor: pointer;
+  min-height: 339px;
+  max-height: 100%;
+  height: 100%;
+}
+
+.why-sfn-card:hover {
+  background: linear-gradient(150.52deg, #CC1D19 -6.7%, #CC4F19 118.54%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+
+.why-sfn-card:hover svg path {
+  fill: var(--white);
+}
+
+.why-sfn-card div {
+  backdrop-filter: blur(-1);
+}
+
+.why-sfn-card div h4 {
+  line-height: 38px;
+}
+
+.steerin-wheel-img {
+  right: 0;
+  top: -50px;
+  z-index: 0;
 }
 
 /* ================================================= WHY driveSFN CSS ENDS ===================================== */
@@ -315,6 +353,12 @@ html {
   }
 }
 
+@media (min-width: 1400px) and (max-width: 1499.98px) {
+  .custom-container {
+    max-width: 1210px !important;
+  }
+}
+
 @media (max-width: 1399.98px) {
   :root {
     --font-2xl: 44px !important;
@@ -346,6 +390,10 @@ html {
 
   .hero-car-img {
     margin-top: 48px;
+  }
+
+  .why-sfn-card {
+    min-height: unset;
   }
 }
 
@@ -391,5 +439,25 @@ html {
 
   .traced-img a img {
     max-width: 24px;
+  }
+
+  .heading {
+    line-height: unset;
+  }
+
+  .para {
+    line-height: unset;
+  }
+
+  .why-sfn-card div h4 {
+    line-height: unset;
+  }
+
+  .steerin-wheel-img img {
+    max-width: 85px;
+  }
+
+  .engine-img {
+    max-width: 120px;
   }
 }
