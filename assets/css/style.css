@@ -21,6 +21,7 @@ html {
 
 .ff-high-speed {
   font-family: high-speed !important;
+  text-transform: uppercase;
 }
 
 .ff-montserrat {
@@ -86,10 +87,16 @@ html {
 }
 
 /* ================================================= COMMON CLASSES ============================================= */
+.main-heading {
+  font-size: var(--font-3xl);
+  font-weight: 400;
+  color: var(--white);
+}
+
 .heading {
   font-size: var(--font-2xl);
-  font-weight: 600;
-  color: white;
+  font-weight: 400;
+  color: var(--white);
 }
 
 .sub-heading {
@@ -152,18 +159,60 @@ html {
   top: 0px;
   z-index: -1;
   /* background-color: white; */
-  background-image: url("../images/png/button-clip-path-bg-white.png");
+  /* background-image: url("../images/png/button-clip-path-bg-white.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: transparent;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .common-btn:hover::after {
   width: 100%;
 }
 
+.bg-common-gradient {
+  background: var(--common-linear-gradient) !important;
+}
+
 /* ================================================= COMMON CLASSES ============================================= */
+.hero-section {
+  min-height: 100vh;
+  background-image: url("../images/png/bg-hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.gradient-filled-text {
+  background-image: url("../images/png/bg-gradient.png");
+  background-repeat: no-repeat;
+  background-size: 100% 93%;
+  max-height: 83px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hero-content {
+  min-height: 90vh;
+}
+
+@media (min-width: 1600px) {
+  .hero-car-img {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 1599.98px) {
+  :root {
+    --font-3xl: 70px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  :root {
+    --font-3xl: 50px !important;
+  }
+}
+
 @media (max-width: 1199.98px) {
   :root {
     --font-xs: 13px;
@@ -176,18 +225,51 @@ html {
 }
 
 @media (max-width: 991.98px) {
+  :root {
+    --font-3xl: 66px !important;
+  }
 
   .common-btn {
     font-size: 22px;
     min-width: 300px;
   }
+
+  .hero-car-img {
+    margin-top: 48px;
+  }
 }
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+  :root {
+    --font-3xl: 46px !important;
+  }
+}
 
 @media (max-width: 575.98px) {
+  :root {
+    --font-3xl: 29px !important;
+  }
+
+  .hero-car-img {
+    margin-top: 16px;
+  }
+
+  .hero-car-img img {
+    transform: rotate3d(1, 1, 1, 352deg);
+  }
+
   .common-btn {
     font-size: 18px;
     min-width: 240px;
+  }
+
+  .hero-content {
+    min-height: 78vh;
+  }
+
+  .gradient-filled-text {
+    padding-left: 14px;
+    padding-right: 14px;
+
   }
 }
