@@ -142,6 +142,7 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: transparent;
+  z-index: -1;
 }
 
 .common-btn:hover {
@@ -548,16 +549,19 @@ html {
   :root {
     --font-sm: 13px;
     --font-2xl: 26px !important;
-    --font-3xl: 29px !important;
+    --font-3xl: 33px !important;
   }
 
   /* .hero-car-img img {
     transform: rotate3d(1, 1, 1, 352deg);
   } */
 
+
   .common-btn {
-    font-size: 18px;
-    min-width: 240px;
+    font-size: 10px;
+    min-width: 125px;
+    min-height: 33px;
+    max-height: 33px;
   }
 
   .hero-content {
@@ -574,7 +578,7 @@ html {
   }
 
   .traced-img {
-    bottom: -7px;
+    bottom: -27px;
   }
 
   .traced-img a img {
@@ -606,11 +610,27 @@ html {
   }
 
   .drivesfn-text-img {
-    max-height: 200px;
-    left: 10px;
+    max-height: 230px;
+    left: 0px;
+    top: 22%;
   }
 
   .logo-img {
     max-width: 114px;
+  }
+
+  .hero-car-img {
+    margin-top: 28px;
+  }
+
+  .hero-section {
+    background-image: url("../images/png/hero-mobile-bg.png");
+  }
+
+}
+
+@media (max-width: 374.98px) {
+  :root {
+    --font-3xl: 24px !important;
   }
 }
