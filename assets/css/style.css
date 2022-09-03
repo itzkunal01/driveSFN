@@ -187,6 +187,7 @@ html {
   background-image: url("../images/png/bg-hero.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  z-index: 0;
 }
 
 .gradient-filled-text {
@@ -219,6 +220,12 @@ html {
   max-width: 40px;
 }
 
+.drivesfn-text-img {
+  left: 20px;
+  top: 18%;
+  z-index: -1;
+}
+
 /* ================================================= HERO CSS ENDS ============================================= */
 /* ================================================= WHY driveSFN CSS STARTS =================================== */
 .why-driveSFN-bg {
@@ -226,6 +233,7 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 800px;
+  z-index: 0;
 }
 
 .why-sfn-card {
@@ -258,6 +266,10 @@ html {
 .steerin-wheel-img {
   right: 0;
   top: -50px;
+  z-index: -1;
+}
+
+.steerin-wheel-img img {
   z-index: -1;
 }
 
@@ -431,6 +443,10 @@ html {
   .exhaust-img {
     max-width: 270px;
   }
+
+  .drivesfn-text-img {
+    max-height: 440px;
+  }
 }
 
 @media (max-width: 1299.98px) {
@@ -514,6 +530,10 @@ html {
   .exhaust-img {
     display: none;
   }
+
+  .steerin-wheel-img {
+    display: none;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -579,5 +599,10 @@ html {
 
   .points-box {
     padding: 34px 24px;
+  }
+
+  .drivesfn-text-img {
+    max-height: 250px;
+    left: 10px;
   }
 }
