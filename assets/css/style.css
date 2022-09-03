@@ -2,10 +2,12 @@
 @font-face {
   font-family: "Satoshi-Regular", sans-serif;
   src: url("../fonts/Satoshi-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
-  font-family: "High-Speed", sans-serif !important;
-  src: url("../fonts/HighSpeedRegular.ttf");
+  font-family: high-speed;
+  src: url("../fonts/high-speed/High\ Speed.ttf");
+  font-display: swap;
 }
 body,
 html {
@@ -14,7 +16,7 @@ html {
   font-family: "Satoshi-Regular", sans-serif !important;
 }
 .ff-high-speed {
-  font-family: "High-Speed", sans-serif !important;
+  font-family: high-speed !important;
 }
 .ff-montserrat {
   font-family: "Montserrat", sans-serif !important;
@@ -23,10 +25,12 @@ html {
   /* font-sizes  */
   --font-xs: 14px;
   --font-sm: 16px;
-  --font-md: 18px;
-  --font-lg: 20px;
-  --font-xl: 36px;
-  --font-2xl: 64px;
+  --font-md: 20px;
+  /* ignore 22 because of small gap in font-sizes */
+  --font-lg: 24px;
+  --font-xl: 40px;
+  --font-2xl: 50px;
+  --font-3xl: 80px;
   /* colors  */
   --red: #d13636;
   --white: #ffffff;
