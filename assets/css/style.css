@@ -261,6 +261,24 @@ html {
 }
 
 /* ================================================= WHY driveSFN CSS ENDS ===================================== */
+/* ================================================= OUR MOTIVATION CSS STARTS ================================= */
+.bg-motivation {
+  background-image: url("../images/png/our-motivation-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.motivation-content {
+  margin-top: 90px;
+}
+
+.motivation-mobile-img {
+  max-width: 746px;
+  left: 0;
+}
+
+/* ================================================= OUR MOTIVATION CSS ENDS =================================== */
 /* ================================================= PRELOADER CSS ============================================= */
 #loading {
   position: fixed;
@@ -345,6 +363,10 @@ html {
   .hero-car-img {
     margin-top: 48px;
   }
+
+  .motivation-mobile-img {
+    left: 80px;
+  }
 }
 
 @media (max-width: 1599.98px) {
@@ -361,8 +383,23 @@ html {
 
 @media (max-width: 1399.98px) {
   :root {
+    --font-xl: 36px;
     --font-2xl: 44px !important;
     --font-3xl: 50px !important;
+  }
+
+  .motivation-mobile-img {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1299.98px) {
+  .motivation-content {
+    margin-top: 40px;
+  }
+
+  .motivation-mobile-img {
+    max-width: 660px;
   }
 }
 
@@ -374,6 +411,19 @@ html {
 
   .common-btn {
     min-width: 180px;
+  }
+
+  .motivation-mobile-img {
+    display: none;
+  }
+
+  .visible-motivation-img {
+    visibility: visible !important;
+  }
+
+  .bg-motivation {
+    background-size: 100% 100%;
+    min-height: 740px;
   }
 }
 
@@ -395,10 +445,23 @@ html {
   .why-sfn-card {
     min-height: unset;
   }
+
+  .bg-motivation {
+    background-image: none;
+  }
+
+  .visible-motivation-img {
+    margin-bottom: -40px;
+  }
+
+  .motivation-content {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 767.98px) {
   :root {
+    --font-xl: 26px !important;
     --font-2xl: 36px !important;
     --font-3xl: 46px !important;
   }
@@ -409,10 +472,6 @@ html {
     --font-sm: 13px;
     --font-2xl: 26px !important;
     --font-3xl: 29px !important;
-  }
-
-  .hero-car-img {
-    margin-top: 16px;
   }
 
   .hero-car-img img {
