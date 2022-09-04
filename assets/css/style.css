@@ -54,16 +54,15 @@ html {
 
 @media (max-width: 1399.98px) {
   :root {
-    --font-xl: 36px;
-    --font-2xl: 44px !important;
-    --font-3xl: 50px !important;
+    --font-xl: 40px;
+    --font-2xl: 40px !important;
   }
 }
 
 @media (max-width: 1199.98px) {
   :root {
     --font-xs: 13px;
-    --font-sm: 15px;
+    --font-lg: 18px;
   }
 }
 
@@ -489,8 +488,8 @@ html {
   }
 
   .exhaust-img {
-    max-width: 200px;
-    right: 75px;
+    max-width: 182px;
+    right: 0px;
   }
 }
 
@@ -507,17 +506,29 @@ html {
     visibility: visible !important;
   }
 
+  .visible-motivation-img img {
+    max-width: 462px;
+  }
+
   .bg-motivation {
     background-size: 100% 100%;
-    min-height: 740px;
+    min-height: 660px;
   }
 
   .engine-img {
-    bottom: -70px;
+    bottom: -40px;
   }
 
   .drivesfn-text-img {
     left: 0px;
+  }
+
+  .heading {
+    line-height: 52px;
+  }
+
+  .why-driveSFN-bg {
+    background-image: unset;
   }
 }
 
@@ -561,6 +572,10 @@ html {
 
   .hero-content {
     min-height: 80vh;
+  }
+
+  .visible-motivation-img img {
+    max-width: unset;
   }
 }
 
