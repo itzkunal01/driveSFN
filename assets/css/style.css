@@ -195,7 +195,8 @@ html {
 
 .common-btn:hover {
   color: var(--black) !important;
-  opacity: .98;
+  opacity: .95;
+  transform: scale(0.98);
 }
 
 .common-btn::after {
