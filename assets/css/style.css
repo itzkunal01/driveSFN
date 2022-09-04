@@ -84,7 +84,8 @@ html {
 
 @media (max-width: 575.98px) {
   :root {
-    --font-sm: 13px;
+    --font-sm: 20px;
+    --font-md: 13px;
     --font-2xl: 26px !important;
     --font-3xl: 33px !important;
   }
@@ -370,6 +371,10 @@ html {
 
 .token-heading {
   min-height: 90px;
+}
+
+.ryt-wrong-imgs {
+  max-height: 21px;
 }
 
 /* ================= PRELOADER CSS ======================= */
@@ -728,5 +733,29 @@ html {
   #scroll {
     width: 45px;
     height: 45px;
+  }
+
+  .ryt-wrong-imgs {
+    max-width: 13px;
+  }
+
+  .token-heading {
+    min-height: 60px;
+  }
+
+  .custom-border-top-bottom {
+    border-top: .86px solid var(--white);
+  }
+
+  .custom-border-0 {
+    border-top: 0 !important;
+  }
+
+  .benefits-section {
+    overflow: scroll;
+  }
+
+  .benefits-section .points-box {
+    width: 700px;
   }
 }
