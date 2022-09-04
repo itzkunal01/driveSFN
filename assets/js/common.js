@@ -4,7 +4,7 @@ $(".hamburger-menu").on("click", function () {
   $("#overlay").toggleClass("overlay-active");
   $(".main-top-section").toggleClass("mobile-view");
   $("body").toggleClass("fix-screen-mobile");
-  $(".hero-background").toggleClass("overflow-initial");
+  $(".hero-background").toggleClass("hero_mobile_content");
 });
 $(document).ready(function () {
   const Section1 = document.querySelector("#name1-about-us");

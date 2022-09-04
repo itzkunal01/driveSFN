@@ -729,4 +729,8 @@ html {
     width: 45px;
     height: 45px;
   }
+
+  .hero_mobile_content {
+    z-index: -1;
+  }
 }
