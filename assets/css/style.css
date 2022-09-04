@@ -46,6 +46,56 @@ html {
     linear-gradient(0deg, #D9D9D9, #D9D9D9);
 }
 
+@media (max-width: 1599.98px) {
+  :root {
+    --font-3xl: 70px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  :root {
+    --font-xl: 36px;
+    --font-2xl: 44px !important;
+    --font-3xl: 50px !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  :root {
+    --font-xs: 13px;
+    --font-sm: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --font-2xl: 40px !important;
+    --font-3xl: 60px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --font-xl: 26px !important;
+    --font-2xl: 36px !important;
+    --font-3xl: 46px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --font-sm: 13px;
+    --font-2xl: 26px !important;
+    --font-3xl: 33px !important;
+  }
+}
+
+@media (max-width: 374.98px) {
+  :root {
+    --font-3xl: 24px !important;
+  }
+}
+
 .fw-400 {
   font-weight: 400 !important;
 }
@@ -86,7 +136,7 @@ html {
   color: var(--black) !important;
 }
 
-/* ================================================= COMMON CLASSES ============================================= */
+/* ================= COMMON CLASSES ======================= */
 .main-heading {
   font-size: var(--font-3xl);
   font-weight: 400;
@@ -187,8 +237,7 @@ html {
   z-index: 5;
 }
 
-/* ================================================= COMMON CLASSES ENDS ============================================= */
-/* ================================================= HERO CSS STARTS ================================================= */
+/* ================= HERO CSS STARTS =========================== */
 .hero-section {
   min-height: 100vh;
   background-image: url("../images/png/bg-hero.png");
@@ -230,8 +279,7 @@ html {
   top: 18%;
 }
 
-/* ================================================= HERO CSS ENDS ============================================= */
-/* ================================================= WHY driveSFN CSS STARTS =================================== */
+/* ================= WHY driveSFN CSS STARTS ============= */
 .why-driveSFN-bg {
   background-image: url("../images/png/why-driveSFN-img.png");
   background-repeat: no-repeat;
@@ -272,8 +320,7 @@ html {
   top: -50px;
 }
 
-/* ================================================= WHY driveSFN CSS ENDS ===================================== */
-/* ================================================= OUR MOTIVATION CSS STARTS ================================= */
+/* ================= OUR MOTIVATION CSS STARTS =========== */
 .bg-motivation {
   background-image: url("../images/png/our-motivation-bg.png");
   background-repeat: no-repeat;
@@ -295,8 +342,7 @@ html {
   right: 45px;
 }
 
-/* ================================================= OUR MOTIVATION CSS ENDS =================================== */
-/* ================================================= BENEFITS POINTS CSS STARTS ================================ */
+/* ================= BENEFITS POINTS CSS STARTS=========== */
 .points-box {
   padding: 45px 34px;
   border-radius: 16px;
@@ -325,8 +371,7 @@ html {
   min-height: 90px;
 }
 
-/* ================================================= BENEFITS POINTS CSS ENDS ================================== */
-/* ================================================= PRELOADER CSS ============================================= */
+/* ================= PRELOADER CSS ======================= */
 #loading {
   position: fixed;
   width: 100%;
@@ -404,8 +449,6 @@ html {
   }
 }
 
-/* ================================================= PRELOADER CSS ============================================= */
-
 @media (min-width: 1600px) {
   .hero-car-img {
     margin-top: 48px;
@@ -416,12 +459,6 @@ html {
   }
 }
 
-@media (max-width: 1599.98px) {
-  :root {
-    --font-3xl: 70px;
-  }
-}
-
 @media (min-width: 1400px) and (max-width: 1499.98px) {
   .custom-container {
     max-width: 1210px !important;
@@ -429,12 +466,6 @@ html {
 }
 
 @media (max-width: 1399.98px) {
-  :root {
-    --font-xl: 36px;
-    --font-2xl: 44px !important;
-    --font-3xl: 50px !important;
-  }
-
   .motivation-mobile-img {
     max-width: 700px;
   }
@@ -464,11 +495,6 @@ html {
 }
 
 @media (max-width: 1199.98px) {
-  :root {
-    --font-xs: 13px;
-    --font-sm: 15px;
-  }
-
   .common-btn {
     min-width: 180px;
   }
@@ -492,11 +518,6 @@ html {
 }
 
 @media (max-width: 991.98px) {
-  :root {
-    --font-2xl: 40px !important;
-    --font-3xl: 60px !important;
-  }
-
   .common-btn {
     font-size: 22px;
     min-width: 300px;
@@ -539,25 +560,10 @@ html {
   }
 }
 
-@media (max-width: 767.98px) {
-  :root {
-    --font-xl: 26px !important;
-    --font-2xl: 36px !important;
-    --font-3xl: 46px !important;
-  }
-}
-
 @media (max-width: 575.98px) {
-  :root {
-    --font-sm: 13px;
-    --font-2xl: 26px !important;
-    --font-3xl: 33px !important;
-  }
-
   /* .hero-car-img img {
     transform: rotate3d(1, 1, 1, 352deg);
   } */
-
 
   .common-btn {
     font-size: 10px;
@@ -629,10 +635,4 @@ html {
     background-image: url("../images/png/hero-mobile-bg.png");
   }
 
-}
-
-@media (max-width: 374.98px) {
-  :root {
-    --font-3xl: 24px !important;
-  }
 }
