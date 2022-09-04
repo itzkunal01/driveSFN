@@ -29,6 +29,10 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <!----- AOS ----->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!----- ANIMATE.CSS ----->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="main-top-section">
@@ -43,7 +47,7 @@
   <section class="hero-section position-relative z-index-0">
     <!----------------------------------- NAVBAR STARTS --------------------------------------------------->
     <nav
-      class="navbar-wrapper shadow-white d-flex py-4 z-index-15 animate__animated animate__flipInX animate__duration-4s animate__delay-2s">
+      class="navbar-wrapper shadow-white d-flex py-4 z-index-15 animate__animated animate__slideInDown animate__duration-4s animate__delay-2s">
       <!-- OVERLAY -->
       <div id="overlay">
         <div class="container">
@@ -145,9 +149,10 @@
     <div class="container custom-container">
       <div class="row hero-content z-index-0 align-items-center justify-content-center">
         <div class="col-12 text-center mt-5 pt-sm-4 pt-xxl-5">
-          <h1 class="main-heading ff-high-speed text-white align-middle mb-0">DRIVE SAFE
-          </h1>
-          <div class="ms-5 ps-4 ps-sm-5">
+          <h1 class="main-heading ff-high-speed text-white align-middle mb-0     
+          animate__animated animate__backInLeft animate__duration-3s animate__delay-2s">DRIVE SAFE</h1>
+          <div class="ms-5 ps-4 ps-sm-5 
+          animate__animated animate__backInRight animate__duration-3s animate__delay-2s">
             <h2 class="main-heading ff-high-speed text-white align-middle mt-2 ms-sm-5 ps-md-5">
               <span class="align-middle me-2">AND</span><span
                 class="align-middle gradient-filled-text pt-2 pt-sm-3">EARN!</span>
@@ -403,6 +408,13 @@
         );
         return false;
       });
+    });
+  </script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
     });
   </script>
 </body>
