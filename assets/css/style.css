@@ -62,6 +62,7 @@ html {
 @media (max-width: 1199.98px) {
   :root {
     --font-xs: 13px;
+    --font-sm: 14px;
     --font-lg: 18px;
   }
 }
@@ -529,6 +530,14 @@ html {
 
   .why-driveSFN-bg {
     background-image: unset;
+  }
+
+  .points-box {
+    padding: 34px;
+  }
+
+  .token-heading {
+    min-height: 80px;
   }
 }
 
