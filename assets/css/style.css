@@ -126,8 +126,6 @@ html {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  z-index: 2;
-  position: relative;
   overflow: hidden;
   font-style: italic;
   min-width: 195px;
@@ -138,11 +136,11 @@ html {
   /* border-top-left-radius: 32px; */
   /* background: var(--common-linear-gradient); */
   /* clip-path: polygon(10% 0%, 92% 0%, 100% 20%, 90% 106%, 100% 100%, 8% 100%, 0% 82%, 7% 20%); */
+  /* position: relative; */
   background-image: url("../images/png/button-clip-path-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: transparent;
-  z-index: -1;
 }
 
 .common-btn:hover {
@@ -177,6 +175,14 @@ html {
   background: var(--common-linear-gradient) !important;
 }
 
+.z-index-0 {
+  z-index: 0;
+}
+
+.z-index-minus-one {
+  z-index: -1;
+}
+
 .z-index-5 {
   z-index: 5;
 }
@@ -188,7 +194,6 @@ html {
   background-image: url("../images/png/bg-hero.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  z-index: 0;
 }
 
 .gradient-filled-text {
@@ -210,7 +215,6 @@ html {
   width: 100%;
   height: 200px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.31%, #000000 100%);
-  z-index: -1;
 }
 
 .traced-img a {
@@ -224,7 +228,6 @@ html {
 .drivesfn-text-img {
   left: 20px;
   top: 18%;
-  z-index: -1;
 }
 
 /* ================================================= HERO CSS ENDS ============================================= */
@@ -234,7 +237,7 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 800px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .why-sfn-card {
@@ -267,11 +270,6 @@ html {
 .steerin-wheel-img {
   right: 0;
   top: -50px;
-  z-index: -1;
-}
-
-.steerin-wheel-img img {
-  z-index: -1;
 }
 
 /* ================================================= WHY driveSFN CSS ENDS ===================================== */
@@ -534,6 +532,10 @@ html {
 
   .steerin-wheel-img {
     display: none;
+  }
+
+  .hero-content {
+    min-height: 80vh;
   }
 }
 

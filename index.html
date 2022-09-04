@@ -42,7 +42,7 @@
   <!----------------------------------- PRELOADER ENDS ---------------------------------------------------->
 
   <!----------------------------------- HERO SECTION STARTS ----------------------------------------------->
-  <section class="hero-section position-relative">
+  <section class="hero-section position-relative z-index-0">
     <!----------------------------------- NAVBAR STARTS --------------------------------------------------->
     <nav
       class="navbar-wrapper shadow-white d-flex py-4 z-index-15 animate__animated animate__flipInX animate__duration-4s animate__delay-2s">
@@ -145,7 +145,7 @@
     </nav>
     <!----------------------------------- NAVBAR ENDS ------------------------------------------------------>
     <div class="container custom-container">
-      <div class="row hero-content align-items-center justify-content-center">
+      <div class="row hero-content z-index-0 align-items-center justify-content-center">
         <div class="col-12 text-center mt-5 pt-sm-4 pt-xxl-5">
           <h1 class="main-heading ff-high-speed text-white align-middle mb-0">DRIVE SAFE
           </h1>
@@ -154,7 +154,7 @@
               <span class="align-middle me-2">AND</span><span
                 class="align-middle gradient-filled-text pt-2 pt-sm-3">EARN!</span>
             </h2>
-            <button class="common-btn position-relative mt-4 ms-4 d-sm-none">Get Started</button>
+            <button class="common-btn mt-4 ms-4 d-sm-none">Get Started</button>
           </div>
 
           <div class="hero-car-img">
@@ -164,21 +164,21 @@
         </div>
       </div>
     </div>
-    <div
-      class="position-absolute traced-img d-flex align-items-end justify-content-center justify-content-sm-start mt-4">
+    <div class="position-absolute traced-img d-flex align-items-end justify-content-center justify-content-sm-start mt-4 z-index-minus-one
+    ">
       <a class="ps-sm-5 pb-sm-5 text-decoration-none bg-transparent" aria-label="traced-img" href="#why-sfn">
         <img src="./assets/images/png/traced-img.png" alt="traced-img">
       </a>
     </div>
-    <img class="position-absolute drivesfn-text-img" src="./assets/images/png/drIvesfn-img-hero.png"
+    <img class="position-absolute drivesfn-text-img z-index-minus-one" src="./assets/images/png/drIvesfn-img-hero.png"
       alt="drIvesfn-img-hero">
   </section>
   <!----------------------------------- HERO SECTION ENDS ------------------------------------------------->
 
   <!----------------------------------- WHY DRIVESFN STARTS ----------------------------------------------->
   <section class="why-driveSFN-bg position-relative">
-    <div class="position-absolute steerin-wheel-img">
-      <img src="./assets/images/png/Steerin-Wheel-img.png" alt="steerin-wheel">
+    <div class="position-absolute steerin-wheel-img z-index-minus-one">
+      <img class="z-index-minus-one" src="./assets/images/png/Steerin-Wheel-img.png" alt="steerin-wheel">
     </div>
     <div class="container custom-container pt-5 py-sm-5" id="whysfn">
       <div class="row">
