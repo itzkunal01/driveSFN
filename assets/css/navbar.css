@@ -160,7 +160,7 @@
     color: #ffffff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1199.98px) {
     #overlay {
         z-index: 20;
     }
@@ -432,7 +432,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1199.98px) {
     #overlay {
         display: none;
     }

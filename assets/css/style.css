@@ -515,6 +515,10 @@ html {
   .engine-img {
     bottom: -70px;
   }
+
+  .drivesfn-text-img {
+    left: 0px;
+  }
 }
 
 @media (max-width: 991.98px) {
