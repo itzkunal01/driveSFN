@@ -758,4 +758,8 @@ html {
   .benefits-section .points-box {
     width: 700px;
   }
+
+  .traced-img {
+    z-index: 5 !important;
+  }
 }
